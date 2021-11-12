@@ -3,7 +3,7 @@ const arr = [1, 2, 3, 4, 5, 6];
 // utilizar el método map de los arreglos para duplicar cada elemento
 // [2, 4, 6, 8, 10, 12]
 const newArray = arr.map(ele => ele*2);
-// console.log(newArray);
+console.log(newArray);
 
 // utilizar el método filter para filtrar los números pares de arr
 // [2, 4, 6]
@@ -123,7 +123,7 @@ const cars =
 
 //Create a function ferraris that returns all the cars of the Ferrari brand.
 
-const ferraris = cars.filter(ele => ele.brand === "Ferrari");
+const ferraris = cars.filter(({brand}) => brand === "Ferrari");
 console.log(ferraris)
 
 //Create a function nineties that returns all the cars with models between 1980 and 1990.
@@ -136,7 +136,7 @@ console.log(nineties)
 const list = cars.map(({brand, model, price}) => `This ${brand} from ${model} costs ${price}` );
 console.log(list)
 
-//Create a function bmwSum that returns the sum of all prices of the BMW cars.
+// Create a function bmwSum that returns the sum of all prices of the BMW cars.
 
-const bmwSum = cars.reduce((acc,{price}) => acc + price,0 );
+const bmwSum = cars.filter(({brand}) => brand === "BMW").reduce((acc,{price}) => acc + price,0);
 console.log(bmwSum)
