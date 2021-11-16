@@ -43,8 +43,7 @@ console.log(a1.velocidad);
             return normalized.join('') === normalized.reverse().join('');
           
       };
-  
-  
+   
   console.log("anita lava la tina".Palindrome())
 
 
