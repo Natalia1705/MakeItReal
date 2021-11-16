@@ -31,9 +31,12 @@
 
 
 // function capitalize(str){
-//     return str.toLowerCase().split(' ').map(word =>
-//        word[0].toUpperCase() + word.substr(1)).join(' ');
-//   }
+
+//    str.toLowerCase().split(' ').map(function(word) {
+//       return word[0].toUpperCase() + word.substr(1);
+//   }).join(' ');
+// }
+
 // console.log(capitalize("hola mundo"));
 
 // Ejercicio 3
@@ -46,11 +49,14 @@
 //      let arr2 = arr[arr.length-1];
 //      return arr2.length;
 //         }
+
 //    console.log(lastItem( " Hello  Worldaa"));
+
 
 // Ejercicio 4
 
 // Escribir una función toUpperCase que reciba un string y retorne el mismo texto en mayúsculas sin utilizar el toUpperCase de los strings.
+
 
 function Capitalize(str) {
                
@@ -96,4 +102,7 @@ console.log(Capitalize("anita lava la tina"))
 // Puedes empezar por una expresión que verifique que comience con al menos un caracter, que tenga una @ y que tenga más caracteres, seguido de un punto, seguido de más caracteres.
 
 // Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
+
+
+// /[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/
 
