@@ -31,10 +31,12 @@
 
 
 // function capitalize(str){
+
 //    str.toLowerCase().split(' ').map(function(word) {
 //       return word[0].toUpperCase() + word.substr(1);
 //   }).join(' ');
 // }
+
 // console.log(capitalize("hola mundo"));
 
 // Ejercicio 3
@@ -47,23 +49,24 @@
 //      let arr2 = arr[arr.length-1];
 //      return arr2.length;
 //         }
-//    console.log(lastItem( " Hello  World  "));
+
+//    console.log(lastItem( " Hello  Worldaa"));
+
 
 // Ejercicio 4
 
 // Escribir una función toUpperCase que reciba un string y retorne el mismo texto en mayúsculas sin utilizar el toUpperCase de los strings.
 
-// function toLowerCase(str) {
-//           function toLowerCase2(str) {
-//             let charletter= str.charCodeAt();
-//             let charupper = charletter - 32
-//             return  String.fromCharCode(charupper)
-//             }
 
-// return str.split('').map(toLowerCase2);
-//         }
+function Capitalize(str) {
+               
+            let char =str.split('').map(e => e.charCodeAt(e)-32);
+            return char.map(e => String.fromCharCode(e)).join('') ;
+                
+              }
 
-// console.log(toLowerCase(("anita lava la tina")))
+console.log(Capitalize("anita lava la tina"))
+
 
 
 // Nota: La entrada sólo va a tener a-z y A-Z.
@@ -100,4 +103,6 @@
 
 // Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
 
+
 // /[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/
+
