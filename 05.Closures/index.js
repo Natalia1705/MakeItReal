@@ -1,3 +1,4 @@
+
 // Ejercicio 1
 
 // Estás diseñando un sistema de facturación. Debes representar la lista de facturas,
@@ -6,6 +7,8 @@
 
 // ¿Cómo representarías esta lista utilizando arreglos y objetos?
 // Lista de facturas
+
+
 var arrayInvoice = []
 
 //funcion que permite agregar facturas a la lista de facturas
@@ -20,13 +23,15 @@ function addInvoice( number, customer, date, items ){
     addItems();
     //funcion que permite agregar items a la factura
     function addItems (){
+
         invoice.items = items.map( ({ id, price, quantity }) => ( { id, price ,quantity  }))
-    }
+
     //Agregamos facturas al arreglo de facturas
     arrayInvoice.push(invoice)
 }
 
 addInvoice(1, "name", '27/10/2021', [{ id: 1, price: 25, quantity: 30 },{ id: 2, price: 20, quantity: 30 } ] )
+
 
 console.log(arrayInvoice)
 // Ejercicio 2
@@ -39,6 +44,7 @@ console.log(arrayInvoice)
 // contar() // 2
 // contar() // 3
 
+
 // function createCount () {
 //     let count = 0;
 //     return function increment(){
@@ -46,6 +52,7 @@ console.log(arrayInvoice)
 //         return count;
 //     }
 // }
+
 
 // const counter1 = createCount();
 // console.log(counter1()); // 1
@@ -55,22 +62,28 @@ console.log(arrayInvoice)
 
 
 
+
 // Recuerda de hacer uso de closures para evitar el uso de variables globales.
-// Ejercicio 3
-
-// Escribir una función createGame que retorne una nueva función que reciba un número y permita 
-// adivinar un número secreto del 1 al 100. Si el número es mayor al número secreto la función retorna 
-// la cadena “Muy alto!”, si el número es menor retorna la cadena “Muy bajo!”. Si el número es el correcto 
-// retorna “Lo adivinaste, felicitaciones!”
-
-// const guess = createGame() // numero secreto: 5
-// guess(8) // "Muy alto!"
-// guess(4) // "Muy bajo!"
-// guess(5) // "Lo adivinaste, felicitaciones!"
-
-// Bonus: crear una aplicación de consola para poder jugar el juego
 
 // const readline = require("readline");
+
+Ejercicio 3
+
+Escribir una función createGame que retorne una nueva función que reciba un número y permita 
+adivinar un número secreto del 1 al 100. Si el número es mayor al número secreto la función retorna 
+la cadena “Muy alto!”, si el número es menor retorna la cadena “Muy bajo!”. Si el número es el correcto 
+retorna “Lo adivinaste, felicitaciones!”
+
+const guess = createGame() // numero secreto: 5
+guess(8) // "Muy alto!"
+guess(4) // "Muy bajo!"
+guess(5) // "Lo adivinaste, felicitaciones!"
+
+Bonus: crear una aplicación de consola para poder jugar el juego
+
+const readline = require("readline");
+
+
 
 // function createGame(){
 //     let secret = Math.floor(Math.random() * (100 - 1) + 1);
@@ -102,3 +115,6 @@ console.log(arrayInvoice)
 //     }
 // }
 // request();
+
+
+
