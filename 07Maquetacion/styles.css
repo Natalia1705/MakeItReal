@@ -1,0 +1,121 @@
+*{
+    font-size:14px;
+    margin: 0px;
+    padding:0px;
+    color: gray;
+   }
+
+body{
+    background-color: gray;
+}
+
+   header{
+     background-color:rgb(88, 107, 216);
+     height: 200px;
+     text-align:center; 
+  }
+  
+  h1{
+    color:white;
+    padding:20px;
+  }
+ 
+  .container{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    position: relative;
+    top:-100px;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .logo{
+    color:rgb(88, 107, 216) ;
+    border:50px;
+    padding:15px;
+    text-align:center;
+  }
+
+  p{
+      color:gray;
+      font-size: 1rem;
+  }
+
+  .login{
+    width: 240px;
+    height: 70px;
+    padding-top: 15px;
+   position: relative;
+   left: 90px; bottom: -10px;
+
+  }
+
+  hr{
+     display:solid;
+     color: lightgray;
+  }
+
+
+  label{
+    position: relative;
+    left: 90px; bottom: -10px;
+  }
+  
+  button{
+    position: relative;
+    left: 160px; bottom: -20px;
+    margin:10px;
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    border-radius: 10%;
+    background-color: rgb(88, 107, 216);
+    color:white;
+  }
+
+
+  @media(min-width:720px){
+    html{
+        font-size:16 ;
+        transition: 2s;
+    }  
+    header{
+        font-size: 16px;
+        color:blue;
+  }
+}
+
+  @media(min-width:960px){
+    html{
+        font-size:18px;
+        transition: 2s;
+      
+    }  
+    header{
+        font-size: 18px;  
+        color:green;
+  }
+  }
+
+
+  @media(min-width:992px){
+    header{
+        transition: 2s;
+    }  
+  }
+  
+  @media(min-width:1140px){
+    html{
+        font-size: 21px;
+        transition: 2s;
+       
+    } 
+    header{
+        font-size: 21px;
+        color:indigo
+  } 
+  }
+
+
