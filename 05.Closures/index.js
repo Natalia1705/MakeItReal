@@ -35,6 +35,7 @@ console.log(arrayInvoice)
 // contar() // 2
 // contar() // 3
 
+
 function createCount () {
     let count = 0;
     return function increment(){
@@ -64,6 +65,7 @@ console.log(counter1()); // 4
 
 // Bonus: crear una aplicación de consola para poder jugar el juego
 
+
 function createGame(){
     let secret = Math.floor(Math.random() * (100 - 1) + 1);
     return function play(number){
@@ -74,6 +76,7 @@ function createGame(){
         }else return "El numero está entre 1 y 100"
     }
 }
+
 
 const game = createGame();
 var winner = false
@@ -94,3 +97,7 @@ function request(){
     }
 }
 request();
+
+
+
+

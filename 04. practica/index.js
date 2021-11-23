@@ -31,6 +31,7 @@ console.log(recipe.ingredients[0].quantity)
 
 
 
+
 function capitalize(str){
     return str.toLowerCase().split(' ').map(e=>
        e[0].toUpperCase() + e.substr(1)).join(' ');
@@ -99,6 +100,15 @@ console.log(regex2.test("31/12/9234"));
 
 // Escribe una expresión regular que verifique si una dirección de email es válida.
 // Puedes empezar por una expresión que verifique que comience con al menos un caracter, que tenga una @ y que tenga más caracteres, seguido de un punto, seguido de más caracteres.
+
+
+
+const regex3 = /.+@.+\..+/
+// console.log(regex3.test("hola@3k.jhg"));
+// Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
+
+// Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
+
 
 
 const regex3 = /.+@.+\..+/
