@@ -30,7 +30,7 @@ console.log(recipe.ingredients[0].quantity)
 // capitalizar("hola mundo") // "Hola Mundo"
 
 
-<<<<<<< HEAD
+
 
 function capitalize(str){
     return str.toLowerCase().split(' ').map(e=>
@@ -38,27 +38,13 @@ function capitalize(str){
   }
 console.log(capitalize("hola mundo"));
 
-=======
-
-// function capitalize(str){
-
-//    str.toLowerCase().split(' ').map(function(word) {
-//       return word[0].toUpperCase() + word.substr(1);
-//   }).join(' ');
-// }
-
-// console.log(capitalize("hola mundo"));
->>>>>>> 4a92cfff285ca42251e0a344905700e8d8b4e7f0
 
 // Ejercicio 3
 
 // https://leetcode.com/problems/length-of-last-word/
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4a92cfff285ca42251e0a344905700e8d8b4e7f0
 function lastItem(str) {
      let arr = str.trim().split(" ")
      let arr2 = arr[arr.length-1];
@@ -115,7 +101,15 @@ console.log(regex2.test("31/12/9234"));
 // Escribe una expresión regular que verifique si una dirección de email es válida.
 // Puedes empezar por una expresión que verifique que comience con al menos un caracter, que tenga una @ y que tenga más caracteres, seguido de un punto, seguido de más caracteres.
 
-<<<<<<< HEAD
+
+
+const regex3 = /.+@.+\..+/
+// console.log(regex3.test("hola@3k.jhg"));
+// Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
+
+// Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
+
+
 
 const regex3 = /.+@.+\..+/
 // console.log(regex3.test("hola@3k.jhg"));
@@ -127,12 +121,3 @@ const regex3 = /.+@.+\..+/
 
 
 
-=======
-const regex3 = /.+@.+\..+/
-console.log(regex3.test("hola@3k.jhg"));
-// Así como en el ejercicio anterior no vas a encontrar una expresión regular perfecta pero te puede ayudar a filtrar emails que claramente sean inválidos.
-
-// /[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/
-
-
->>>>>>> 4a92cfff285ca42251e0a344905700e8d8b4e7f0

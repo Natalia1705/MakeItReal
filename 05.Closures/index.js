@@ -35,7 +35,7 @@ console.log(arrayInvoice)
 // contar() // 2
 // contar() // 3
 
-<<<<<<< HEAD
+
 function createCount () {
     let count = 0;
     return function increment(){
@@ -48,26 +48,6 @@ console.log(counter1()); // 1
 console.log(counter1()); // 2
 console.log(counter1()); // 3
 console.log(counter1()); // 4
-=======
-
-// function createCount () {
-//     let count = 0;
-//     return function increment(){
-//         count++;
-//         return count;
-//     }
-// }
-
-
-// const counter1 = createCount();
-// console.log(counter1()); // 1
-// console.log(counter1()); // 2
-// console.log(counter1()); // 3
-// console.log(counter1()); // 4
-
-
-
->>>>>>> 4a92cfff285ca42251e0a344905700e8d8b4e7f0
 
 // Recuerda de hacer uso de closures para evitar el uso de variables globales.
 // const readline = require("readline");
@@ -85,7 +65,7 @@ console.log(counter1()); // 4
 
 // Bonus: crear una aplicación de consola para poder jugar el juego
 
-<<<<<<< HEAD
+
 function createGame(){
     let secret = Math.floor(Math.random() * (100 - 1) + 1);
     return function play(number){
@@ -96,6 +76,7 @@ function createGame(){
         }else return "El numero está entre 1 y 100"
     }
 }
+
 
 const game = createGame();
 var winner = false
@@ -116,39 +97,7 @@ function request(){
     }
 }
 request();
-=======
-
-// function createGame(){
-//     let secret = Math.floor(Math.random() * (100 - 1) + 1);
-//     return function play(number){
-//         if( number >= 1 && number <= 100 ){
-//             if( number > secret ) return "Muy alto!"
-//             else if( number < secret ) return "Muy bajo!"
-//             else { winner = true; return "Lo adivinaste, felicitaciones!" }
-//         }else return "El numero está entre 1 y 100"
-//     }
-// }
-
-// const game = createGame();
-// var winner = false
-// const label = "Ingrese un numero del 1 al 100 "
-
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout,
-// });
-
-// function request(){
-//     if( winner ) rl.close()
-//     else {
-//         rl.question(label, function(answer){
-//             console.log(game(answer))
-//             request();
-//         });
-//     }
-// }
-// request();
 
 
 
->>>>>>> 4a92cfff285ca42251e0a344905700e8d8b4e7f0
+
