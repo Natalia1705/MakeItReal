@@ -1,24 +1,20 @@
 import { useSelector, useDispatch } from "react-redux";
-import {
-  increment,
-  decrement,
-  reset,
-  selectCounterValue,
-} from "../features/counter/counter-slice";
+
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector(selectCounterValue);
+  const counter = useSelector((state) => state.counter);
 
   const incrementHandler = () => {
-    dispatch(increment());
+    dispatch({ type: "increment" });
   };
   const decrementHandler = () => {
-    dispatch(decrement());
+    dispatch({ type: "decrement" });
   };
 
   const resetCounterHandler = () => {
-    dispatch(reset());
+    dispatch({ type: "reset" });
+
   };
 
   return (

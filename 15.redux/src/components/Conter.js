@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+
 import {
   increment,
   decrement,
@@ -19,6 +20,7 @@ const Counter = () => {
 
   const resetCounterHandler = () => {
     dispatch(reset());
+
   };
 
   return (
