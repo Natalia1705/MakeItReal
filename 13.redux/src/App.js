@@ -1,10 +1,14 @@
 import "./App.css";
-import Counter from "./components";
+import { Provider } from "react-redux";
+import { Counter } from "";
+import store from "./store/store";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
         <p>
           <Counter></Counter>
         </p>
@@ -14,6 +18,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         ></a>
+
       </header>
     </div>
   );
