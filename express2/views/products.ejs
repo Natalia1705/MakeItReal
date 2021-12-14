@@ -17,6 +17,7 @@
         <ul>
             <% for(i=0; i <items.length; i++) {%>
                 <li class="title">
+
                     <%= items[i].name %>
                 </li>
                 <li>
@@ -27,7 +28,7 @@
         </ul>
     </div>
     <h3>Add-Product</h3>
-    <form action="/newproduct" method="POST">
+    <form action="/products" method="POST">
         <input type="text" name="newItem" id="newItem" />
         <button type="submit">Enviar</button>
     </form>

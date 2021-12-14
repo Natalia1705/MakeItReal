@@ -5,6 +5,8 @@ const indexController = require("../controllers/index");
 router.get("/", indexController.index);
 router.get("/products", indexController.products);
 router.get("/products/:id", indexController.id);
-router.post("/newproduct", indexController.newProduct);
+router.post("/products", indexController.newProduct);
+router.patch("/products/:id", indexController.patchById);
+router.delete("/products/:id", indexController.deleteById);
 
 module.exports = router;
