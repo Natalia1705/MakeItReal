@@ -53,6 +53,7 @@ const deleteById = (req, res) => {
   res.redirect("/products");
 };
 
+
 module.exports = {
   index,
   products,

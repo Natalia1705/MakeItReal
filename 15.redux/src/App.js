@@ -3,14 +3,17 @@ import { Provider } from "react-redux";
 import "./App.css";
 import { store } from "./store/store";
 
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>
+
           <Provider store={store}>
             <Counter></Counter>
           </Provider>
+
         </p>
         <a
           className="App-link"
